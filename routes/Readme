@@ -1,0 +1,51 @@
+this task is made by node.js,express,and mongo 
+////////////////////////
+Requierd Environment 
+on ubuntu run on terminal
+1-install node.js 
+(sudo apt install nodejs npm)
+#####################
+2-install npm
+(sudo apt install npm)
+#######################
+3-install mongodb
+(sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10)
+(echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list)
+(sudo apt-get install -y mongodb-org)
+#######################
+ To Run 
+ ##################
+ 1-npm install
+ 2-node index.js
+ ###################
+ Endpoints
+ ######
+ 3-go to 
+ localhost:2070/users/registerform
+ ---
+ it will open a form 
+ to enter requierd  fields in task1
+ it return user object as defiend in task1 if succes
+ and error object if faild
+//////////////////////
+
+note---> i confused in task2 if requierd is register or login so i make 2 by two end point 
+ 4-
+ go to 
+ localhost:2070/users/loginform
+ ---
+ it will open a form to register
+ to enter requierd  fields in task2
+ it return auth token if succes
+ and error object if faild
+
+ 5-
+go to 
+ localhost:2070/users/loginform2
+ ---
+ it will open a form to login
+ to enter requierd  fields in task2
+ it return auth token if succes (if phone number and password is already exist)
+ and error object if faild
+
+
