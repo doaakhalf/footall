@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
 
 const stadiumTimesSchema = new mongoose.Schema({
-    Start: Time,
-    End:Time,
-    Day:Date,
+    start: String,
+    end:String,
+    day:Date,
     price:Number,
-    stadium_id: [{ type: mongoose.Schema.Types.ObjectId, ref: 'stadium', required: true }]
+    stadium_id: [{ type: mongoose.Schema.Types.ObjectId, ref: 'stadium', required: true }],
+   
 
     
     
