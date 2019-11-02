@@ -28,7 +28,7 @@ app.use(expressValidator());
 app.use(cookieParser());
 app.use(session({secret: 'krunal', saveUninitialized: false, resave: false}));
 ///////////////////////
-
+app.get('/',(req,res)=>{res.send('doaa')})
 app.set('views', __dirname + '/views');
 app.use(express.json());
 app.set('view engine', 'ejs')
